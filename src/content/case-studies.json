@@ -1,0 +1,105 @@
+ {
+    "page": {
+        "title": "Case Studies",
+        "subtitle": "We let the results speak for themselves."
+    },
+    "items": [
+        {
+            "client": "Global Logistics Co.",
+            "title": "AI-Driven Logistics Optimization",
+            "metrics": [
+                {
+                    "value": "40%",
+                    "label": "reduction in fuel costs"
+                },
+                {
+                    "value": "50k+",
+                    "label": "daily shipments processed"
+                },
+                {
+                    "value": "3x",
+                    "label": "faster dispatch times"
+                }
+            ],
+            "tags": [
+                "Logistics",
+                "IoT",
+                "Algorithms"
+            ],
+            "summary": "Replaced a legacy dispatch system with a real-time event-driven architecture.",
+            "slug": "global-logistics",
+            "content": {
+                "challenge": "Global Logistics Co. was struggling with a legacy monolithic dispatch system that couldn't handle the scale of their growing fleet. Route planning was static, taking hours to compute, and failed to account for real-time variables like traffic, weather, and vehicle capacity. This inefficiency resulted in soaring fuel costs and delayed deliveries.",
+                "solution": "We engineered a ground-up replacement using a microservices architecture driven by real-time events. The core of the solution is a custom optimization engine that processes thousands of variables per second. By integrating IoT sensors from the fleet and external data APIs, the system dynamically adjusts routes in real-time.",
+                "approach": [
+                    "**Event-Driven Architecture:** We utilized Apache Kafka to handle high-throughput telemetry streams from over 5,000 vehicles.",
+                    "**Dynamic Routing Algorithms:** Developed custom heuristic algorithms capable of solving complex Vehicle Routing Problems (VRP) in milliseconds.",
+                    "**Predictive Analytics:** Implemented machine learning models to predict traffic congestion and optimized dispatch windows."
+                ],
+                "results": "The impact was immediate. Fuel costs dropped by 40% due to optimized routing. The system now processes over 50,000 shipments daily with zero downtime, and dispatch times improved by 300%, allowing for same-day delivery expansion."
+            }
+        },
+        {
+            "client": "FinTech Startup",
+            "title": "Zero-Error Financial Reconciliation",
+            "metrics": [
+                {
+                    "value": "0.00%",
+                    "label": "transaction errors"
+                },
+                {
+                    "value": "10M+",
+                    "label": "daily transactions"
+                }
+            ],
+            "tags": [
+                "FinTech",
+                "Database",
+                "Security"
+            ],
+            "summary": "Designed a double-entry ledger system capable of reconciling millions of transactions daily without drift.",
+            "slug": "fintech-ledger",
+            "content": {
+                "challenge": "speed and accuracy are often at odds. Our client, a high-growth fintech startup, needed to scale their transaction processing from 100k to 10M daily transactions. their existing database was prone to race conditions, leading to manual reconciliation nightmares and financial discrepancies.",
+                "solution": "We architected an immutable, double-entry ledger system inspired by high-frequency trading platforms. By treating every transaction as an immutable event and enforcing strict ACID compliance at the database level, we eliminated the possibility of arithmetic drift.",
+                "approach": [
+                    "**Immutable Ledger:** Every transaction is an append-only log entry, ensuring a complete, audit-proof history.",
+                    "**Idempotency Keys:** Implemented robust API idempotency to handle network retries without duplicating transactions.",
+                    "**Concurrency Control:** Used optimistic locking mechanisms to handle high-concurrency wallet updates without blocking throughput."
+                ],
+                "results": "The system now handles over 10 million transactions daily with a verified 0.00% error rate. Mathematical proof of consistency is run automatically every night, giving the finance team absolute confidence in the numbers."
+            }
+        },
+        {
+            "client": "HealthData Inc.",
+            "title": "Secure Healthcare Data Infrastructure",
+            "metrics": [
+                {
+                    "value": "SOC2",
+                    "label": "Type II Certified"
+                },
+                {
+                    "value": "100%",
+                    "label": "encrypted at rest"
+                }
+            ],
+            "tags": [
+                "Healthcare",
+                "Compliance",
+                "Cloud"
+            ],
+            "summary": "Migrated sensitive patient data from on-premise servers to a secure, encrypted cloud environment.",
+            "slug": "healthdata-lake",
+            "content": {
+                "challenge": "HealthData Inc. faced a critical dilemma: their on-premise infrastructure was hitting capacity limits, but moving sensitive patient data (PHI) to the cloud posed significant compliance and security risks. They needed a solution that was scalable but strictly HIPAA-compliant.",
+                "solution": "We built a fortress in the cloud. Using a zero-trust architecture, we engineered a data lake on AWS that ensures data is encrypted at every stage—in transit, at rest, and during processing. Access controls are granular, ensuring only authorized personnel can access specific datasets.",
+                "approach": [
+                    "**Zero-Trust Security:** Implemented strict IAM roles and service mesh policies to minimize attack surface.",
+                    "**Automated Compliance:** Infrastructure as Code (IaC) ensures that every deployed resource is automatically checked against HIPAA and SOC2 compliance standards.",
+                    "**Data Anonymization:** Built automated pipelines to sanitize and anonymize data for research purposes without compromising patient privacy."
+                ],
+                "results": "The migration was a success. HealthData Inc. achieved SOC2 Type II certification within 3 months of launch. They now store petabytes of data securely, with 100% encryption coverage and zero reported security incidents."
+            }
+        }
+    ]
+}

@@ -1,0 +1,123 @@
+"use client";
+
+import { motion, AnimatePresence } from "framer-motion";
+
+import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import Button from "@/components/ui/Button";
+import Container from "./Container";
+import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
+import navigation from "@/content/navigation.json";
+
+const Navbar = () => {
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const pathname = usePathname();
+
+    const isActive = (href: string) => pathname === href;
+
+    return (
+        <motion.nav
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }} // Custom easing
+            className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100/50 shadow-sm"
+        >
+            <Container>
+                <div className="h-16 lg:h-20 flex items-center justify-between">
+                    {/* Logo */}
+                    <Link href="/" className="flex items-center">
+                        <Image
+                            src="/asset/logo.png"
+                            alt="EagleX Logo"
+                            width={120}
+                            height={40}
+                            className="h-8 lg:h-10 w-auto"
+                            priority
+                        />
+                    </Link>
+
+                    {/* Desktop Navigation */}
+                    <div className="hidden lg:flex items-center space-x-8">
+                        {navigation.main.map((link) => (
+                            <Link
+                                key={link.href}
+                                href={link.href}
+                                className={cn(
+                                    "text-sm font-medium transition-colors",
+                                    isActive(link.href)
+                                        ? "text-slate-900"
+                                        : "text-slate-500 hover:text-slate-900"
+                                )}
+                            >
+                                {link.label}
+                            </Link>
+                        ))}
+                    </div>
+
+                    {/* Desktop CTA */}
+                    <div className="hidden lg:block">
+                        <Button href={navigation.cta.href} variant="primary" size="sm" showArrow>
+                            {navigation.cta.label}
+                        </Button>
+                    </div>
+
+                    {/* Mobile Menu Button */}
+                    <button
+                        className="lg:hidden p-2 text-slate-900"
+                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                        aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+                        aria-expanded={mobileMenuOpen}
+                    >
+                        {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                    </button>
+                </div>
+
+                {/* Mobile Menu */}
+                <AnimatePresence>
+                    {mobileMenuOpen && (
+                        <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: "auto" }}
+                            exit={{ opacity: 0, height: 0 }}
+                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                            className="lg:hidden p-4 border-t border-slate-100 overflow-hidden"
+                        >
+                            <div className="flex flex-col space-y-4">
+                                {navigation.main.map((link) => (
+                                    <Link
+                                        key={link.href}
+                                        href={link.href}
+                                        className={cn(
+                                            "text-base font-medium py-2",
+                                            isActive(link.href)
+                                                ? "text-slate-900"
+                                                : "text-slate-500 hover:text-slate-900"
+                                        )}
+                                        onClick={() => setMobileMenuOpen(false)}
+                                    >
+                                        {link.label}
+                                    </Link>
+                                ))}
+                                <Button
+                                    href={navigation.cta.href}
+                                    variant="primary"
+                                    showArrow
+                                    className="mt-4 font-medium"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    {navigation.cta.label}
+                                </Button>
+                            </div>
+
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </Container>
+        </motion.nav >
+    );
+};
+
+export default Navbar;

@@ -1,0 +1,52 @@
+{
+    "page": {
+        "title": "Industries We Serve",
+        "subtitle": "We don’t dabble. We build critical systems for regulated, high-stakes environments where failure is not an option."
+    },
+    "items": [
+        {
+            "name": "FinTech & Banking",
+            "description": "Financial systems demand absolute precision. We build ledger-based architectures that guarantee transaction integrity, even at massive scale. From real-time fraud detection pipelines to automated reconciliation systems, we engineer software that banks and fintechs trust with their core assets. We understand that 'eventual consistency' isn't good enough when money is on the line.",
+            "features": [
+                "Double-entry Immutable Ledgers",
+                "PCI-DSS Level 1 Compliance",
+                "ISO 8583 Message Parsing",
+                "High-frequency Trading Engines",
+                "KYC/AML Automated Workflows"
+            ]
+        },
+        {
+            "name": "Healthcare & MedTech",
+            "description": "In healthcare, data interoperability saves lives. We build secure, HIPAA-compliant platforms that break down information silos. Whether it's integrating with legacy EHR systems using FHIR standards or building patient-facing telemedicine apps, we ensure that sensitive health data is accessible when needed and protected always.",
+            "features": [
+                "HIPAA & GDPR Compliance",
+                "HL7 / FHIR Interoperability",
+                "DICOM Imaging Integration",
+                "IoMT (Internet of Medical Things)",
+                "Telehealth WebRTC Platforms"
+            ]
+        },
+        {
+            "name": "Logistics & Supply Chain",
+            "description": "Modern supply chains run on data, not just trucks. We build visibility execution platforms that track inventory in real-time, optimize “last mile” delivery routes using geospatial algorithms, and predict demand spikes before they happen. We help you move physical goods faster by moving digital information smarter.",
+            "features": [
+                "Real-time IoT Telemetry",
+                "Geospatial Route Optimization",
+                "Warehouse Management Systems (WMS)",
+                "EDI Integrations (X12/EDIFACT)",
+                "Predictive Demand Planning"
+            ]
+        },
+        {
+            "name": "Retail & E-commerce",
+            "description": "Clicks are cheap; conversions are hard. We engineer headless commerce solutions that load instantly and handle Black Friday traffic spikes without breaking a sweat. By decoupling the frontend from the backend, we give marketing teams the freedom to iterate on customer experiences while ensuring the transaction engine remains rock-solid.",
+            "features": [
+                "Headless Commerce Architecture",
+                "High-Performance Checkout Flows",
+                "Omnichannel Inventory Sync",
+                "Personalization Engines",
+                "Marketplace Multi-vendor Systems"
+            ]
+        }
+    ]
+}

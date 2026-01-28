@@ -1,0 +1,72 @@
+{
+    "main": [
+        {
+            "label": "Services",
+            "href": "/services"
+        },
+        {
+            "label": "Industries",
+            "href": "/industries"
+        },
+        {
+            "label": "How We Work",
+            "href": "/how-we-work"
+        },
+        {
+            "label": "Case Studies",
+            "href": "/case-studies"
+        },
+        {
+            "label": "Insights",
+            "href": "/insights"
+        },
+        {
+            "label": "About",
+            "href": "/about"
+        }
+    ],
+    "footer": {
+        "company": [
+            {
+                "label": "About Us",
+                "href": "/about"
+            },
+            {
+                "label": "Careers",
+                "href": "/about"
+            },
+            {
+                "label": "Contact",
+                "href": "/contact"
+            }
+        ],
+        "resources": [
+            {
+                "label": "Services",
+                "href": "/services"
+            },
+            {
+                "label": "Case Studies",
+                "href": "/case-studies"
+            },
+            {
+                "label": "Insights",
+                "href": "/insights"
+            }
+        ],
+        "legal": [
+            {
+                "label": "Privacy Policy",
+                "href": "/privacy"
+            },
+            {
+                "label": "Terms of Service",
+                "href": "/terms"
+            }
+        ]
+    },
+    "cta": {
+        "label": "Let's Talk",
+        "href": "/contact"
+    }
+}

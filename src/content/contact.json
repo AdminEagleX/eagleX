@@ -1,0 +1,41 @@
+{
+    "page": {
+        "title": "Let's Talk",
+        "subtitle": "Complete the form below or email us directly at hello@eaglexinfo.com."
+    },
+    "form": {
+        "fields": [
+            {
+                "name": "firstName",
+                "label": "First Name",
+                "type": "text",
+                "placeholder": "Jane",
+                "required": true
+            },
+            {
+                "name": "lastName",
+                "label": "Last Name",
+                "type": "text",
+                "placeholder": "Doe",
+                "required": true
+            },
+            {
+                "name": "email",
+                "label": "Work Email",
+                "type": "email",
+                "placeholder": "jane@company.com",
+                "required": true
+            },
+            {
+                "name": "message",
+                "label": "Project Details",
+                "type": "textarea",
+                "placeholder": "Tell us about your project...",
+                "required": true
+            }
+        ],
+        "submitLabel": "Send Message",
+        "successMessage": "Thank you for reaching out. We will get back to you within 24 hours.",
+        "errorMessage": "Something went wrong. Please try again or email us directly."
+    }
+}

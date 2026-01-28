@@ -1,0 +1,32 @@
+{
+    "page": {
+        "title": "Insights",
+        "subtitle": "Engineering thoughts, unvarnished."
+    },
+    "posts": [
+        {
+            "slug": "why-microservices-are-often-a-mistake",
+            "title": "The Hidden Costs of Microservice Architecture",
+            "date": "2025-10-12",
+            "category": "Architecture",
+            "excerpt": "The distributed monolith is the worst of both worlds. Here is when you should actually split your services.",
+            "content": "The tech industry loves a pendulum swing. For the past decade, \"monolith\" has been a dirty word, and microservices have been the promised land. But for many organizations, the harsh reality is that they've traded a single, manageable codebase for a distributed nightmare—the dreaded \"distributed monolith.\"\n\n### The Correctness Fallacy\n\nMicroservices promise decoupling, but often deliver distributed coupling. If Service A cannot function without Service B, they are not decoupled; they are just communicating over a flakey network instead of a reliable function call. This introduces latency, serialization overhead, and the complex challenge of distributed transactions.\n\n### When Complexity is Justified\n\nMicroservices *do* have their place. They excel when you have distinct domains with clear boundaries, independent scaling requirements, and—crucially—teams large enough to support the operational overhead. If you're a team of five engineers managing twenty microservices, you aren't building a scalable system; you're building a resume.\n\n### The Modular Monolith\n\nWe advocate for starting with a \"Modular Monolith.\" Define clear boundaries within a single codebase. Enforce them with linting rules or module systems. This gives you logic separation without the operational tax of orchestration, service discovery, and network failure modes. You can always split a well-structured module into a service later, but merging a spaghetti microservice architecture back into a monolith is a herculean task."
+        },
+        {
+            "slug": "the-case-for-boring-technology",
+            "title": "Why Established Stacks Beat Trendy Tech",
+            "date": "2025-09-28",
+            "category": "Philosophy",
+            "excerpt": "Why we choose stability over hype, and why your CTO should too.",
+            "content": "In an industry obsessed with the \"next big thing,\" choosing \"boring\" technology is a radical act of pragmatism. By \"boring,\" we don't mean outdated—we mean proven. We mean Postgres, not the latest niche graph database that just hit v1.0. We mean Rails or Django or Next.js, not the experimental framework that changes its API every week.\n\n### Innovation Tokens\n\nEvery project has a limited supply of \"innovation tokens.\" You can spend them on new technology, or you can spend them on solving your unique business problem. If you spend your tokens wrestling with an immature database or a flaky build tool, you have fewer resources left to build the actual product your customers pay for.\n\n### The Talent Factor\n\nRecruiting for established stacks is easier. Documentation is abundant. Stack Overflow answers are plentiful. When you choose a boring stack, you aren't just choosing code; you're choosing an ecosystem. You're ensuring that your team can solve problems by Googling them, rather than by debugging the framework's source code.\n\n### Stability is a Feature\n\nYour customers don't care if your backend is written in Rust, Go, or PHP. They care if it works. Boring technology fails in known, predictable ways. Bleeding-edge technology fails in new, exciting, and catastrophic ways. For mission-critical systems, \"exciting\" is the last thing you want."
+        },
+        {
+            "slug": "database-indexing-strategies",
+            "title": "Optimizing High-Throughput Databases",
+            "date": "2025-09-15",
+            "category": "Engineering",
+            "excerpt": "A deep dive into B-Trees, LSM Trees, and when to use which.",
+            "content": "Database performance isn't magic; it's physics and data structures. At the core of every high-performance database is an indexing strategy that defines how data is stored and retrieved. Understanding these structures—specifically B-Trees and Log-Structured Merge (LSM) Trees—is crucial for any engineer building data-intensive applications.\n\n### B-Trees: The Read-Heavy Champion\n\nThe B-Tree (and its cousin, the B+ Tree) is the default structure for relational databases like PostgreSQL and MySQL. It excels at read operations because it keeps the tree balanced, ensuring consistent lookup times. However, this balance comes at a cost: every write requires rebalancing the tree, which involves random I/O. For read-heavy workloads with moderate write volume, B-Trees are unbeatable.\n\n### LSM Trees: The Write-Heavy Workhorse\n\nLog-Structured Merge Trees, found in databases like Cassandra and RocksDB, turn random writes into sequential writes. Incoming data is written to an in-memory buffer (MemTable) and then flushed to disk as an immutable Sorted String Table (SSTable). This makes them incredibly fast for ingestion-heavy workloads (like logs or IoT sensor data). The trade-off? Reads can be slower, as the system may need to check multiple SSTables.\n\n### Choosing the Right Tool\n\nDon't let default settings dictate your architecture. If you're building a ledger or a user profile system, B-Trees offer the consistency you need. If you're building an activity feed or a metrics engine, an LSM-based store will handle the write throughput without breaking a sweat. Know your data structures, and you know your performance limits."
+        }
+    ]
+}

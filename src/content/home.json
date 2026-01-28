@@ -1,0 +1,55 @@
+{
+    "hero": {
+        "title": "Engineering for {rotation}.",
+        "titleRotating": [
+            "Critical Operations",
+            "Unstoppable Scale",
+            "Absolute Resilience",
+            "True Modernization"
+        ],
+        "subtitle": "High-stakes business systems, not just websites. We are a team of senior architects and product strategists dedicated to boringly reliable software.",
+        "primaryCta": {
+            "label": "Talk to Us",
+            "href": "/contact"
+        },
+        "secondaryCta": {
+            "label": "Explore Services",
+            "href": "/services"
+        }
+    },
+    "valueProps": [
+        {
+            "title": "Enterprise Ready",
+            "description": "Built for high security, compliance, and strict operational standards from day one."
+        },
+        {
+            "title": "Long-Term Scale",
+            "description": "Architectures that survive team changes, traffic spikes, and business pivots."
+        },
+        {
+            "title": "Content Driven",
+            "description": "Clear information architecture that puts your data and content first."
+        }
+    ],
+    "whySection": {
+        "title": "Why EagleX?",
+        "description": "Most agencies build for launch day. We build for the next 5 years. Our approach combines rigorous engineering with clean, distraction-free design.",
+        "points": [
+            "Minimal technical debt",
+            "Performance as a feature",
+            "Accessibility built-in"
+        ],
+        "cta": {
+            "label": "Our Philosophy",
+            "href": "/about"
+        }
+    },
+    "ctaBanner": {
+        "title": "Ready to build better systems?",
+        "description": "Let's discuss your infrastructure and how we can bring stability to your digital operations.",
+        "cta": {
+            "label": "Get in Consultation",
+            "href": "/contact"
+        }
+    }
+}

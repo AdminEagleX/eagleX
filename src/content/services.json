@@ -1,0 +1,411 @@
+{
+    "page": {
+        "title": "Our capabilities",
+        "subtitle": "We’re not like most agencies. In fact, we’re the complete opposite. While they work as vendors, we facilitate genuine partnerships rooted in accountability and measurable outcomes."
+    },
+    "capabilities": [
+        {
+            "id": "strategy",
+            "title": "Strategy",
+            "description": "We partner with ambitious enterprises to achieve a competitive edge through digital transformation, crafting clear, innovative strategies for future-ready products and platforms.",
+            "link": "/services/strategy",
+            "slug": "strategy",
+            "details": {
+                "overview": "In an era of rapid technical disruption, hope is not a strategy. We help ambitious enterprises navigate uncertainty and achieve a sustainable competitive edge through rigorous, data-driven planning.\n\nOur strategic approach goes beyond high-level slide decks; we ground our recommendations in technical reality and deep market data. We partner with C-suite leaders to define clear, actionable roadmaps that align technology investments with business outcomes, ensuring that every initiative drives measurable value. Whether you are modernizing a legacy core, launching a new digital venture, or integrating AI into your workflow, our strategy practice ensures you are building the right thing, at the right time, for the right reasons.\n\nWe believe that true digital transformation requires a holistic view—combining business acumen, technical expertise, and organizational change management. We don't just deliver a plan; we provide the architectural blueprint and the implementation guide to make it a reality. Our consultants act as extensions of your executive team, challenging assumptions and uncovering hidden opportunities for growth.",
+                "methodology": [
+                    {
+                        "title": "Discovery & Immersion",
+                        "description": "We start by deeply embedding ourselves in your business context. We conduct stakeholder interviews, analyze existing data, and review current technical architecture to build a comprehensive 'current state' assessment."
+                    },
+                    {
+                        "title": "Opportunity Definition",
+                        "description": "Using our proprietary frameworks, we identify high-impact opportunities where technology can solve critical business problems. We prioritize these based on ROI, feasibility, and strategic alignment."
+                    },
+                    {
+                        "title": "Strategic Roadmap",
+                        "description": "We translate opportunities into a phased execution plan. This roadmap details the technology stack, resource requirements, timelines, and key performance indicators (KPIs) for each phase."
+                    },
+                    {
+                        "title": "Execution Support",
+                        "description": "A plan is only as good as its execution. We provide ongoing governance, technical oversight, and change management support to ensure the strategy is delivered effectively and sustainable."
+                    }
+                ],
+                "benefits": [
+                    "Align technology investment directly with business goals to eliminate waste and redundant spending.",
+                    "Accelerate time-to-value for digital initiatives by identifying and removing critical bottlenecks early.",
+                    "Mitigate execution risks through thorough technical due diligence and feasibility analysis.",
+                    "Foster a culture of innovation and agility that can adapt to changing market conditions.",
+                    "Unlock new revenue streams and business models through digital transformation and ecosystem partnerships."
+                ],
+                "offerings": [
+                    "Digital Transformation",
+                    "Product Strategy",
+                    "Design Thinking",
+                    "AI Strategy",
+                    "Technical Due Diligence",
+                    "Commerce Strategy"
+                ]
+            },
+            "items": [
+                {
+                    "title": "Digital Transformation",
+                    "slug": "digital-transformation",
+                    "description": "Executive digital transformation strategies to empower workforce and accelerate organizational evolution.",
+                    "details": {
+                        "overview": "EagleX delivers specialized, technology-oriented solutions to drive digital transformation across your business processes. Our strategies are designed to accelerate evolution, empower your workforce, and embed adaptive knowledge capabilities within your organization.",
+                        "offerings": [
+                            "Agile Ways of Working",
+                            "Intelligent Data Capture",
+                            "Robotics Process Automation (RPA)",
+                            "Technology Transformation Strategy"
+                        ]
+                    }
+                },
+                {
+                    "title": "Product strategy",
+                    "slug": "product-strategy",
+                    "description": "We establish a focused product vision and adaptable roadmap that aligns user demands with business objectives.",
+                    "details": {
+                        "overview": "Success in the digital age requires more than just a great idea. It needs a strategic vision. We help you define a clear product strategy that aligns with your business goals, adapts to market changes, and delivers real value to your users.",
+                        "offerings": [
+                            "Market & Competitor Analysis",
+                            "Product Vision & Roadmap",
+                            "Feature Prioritization",
+                            "Go-to-Market Strategy",
+                            "KPI Definition & Tracking"
+                        ]
+                    }
+                },
+                {
+                    "title": "Design thinking",
+                    "slug": "design-thinking",
+                    "description": "Accelerate innovation with our design thinking methodology, identifying user-focused solutions to speed up validation and delivery.",
+                    "details": {
+                        "overview": "Innovation shouldn't be a gamble. Our design thinking approach helps you identify the right problems to solve and the best solutions to build. We facilitate workshops and user research to ensure your product resonates with your audience.",
+                        "offerings": [
+                            "Innovation Workshops",
+                            "User Research & Empathy Mapping",
+                            "Prototyping & Validation",
+                            "Problem Definition",
+                            "Ideation Sessions"
+                        ]
+                    }
+                },
+                {
+                    "title": "AI strategy",
+                    "slug": "ai-strategy",
+                    "description": "Deploy a robust AI strategy that optimizes workflows and builds intelligent solutions, preparing your company for the future.",
+                    "details": {
+                        "overview": "Artificial Intelligence is transforming industries. We help you navigate the AI landscape, identifying opportunities to automate processes, enhance decision-making, and create new value streams responsibly and effectively.",
+                        "offerings": [
+                            "AI Readiness Assessment",
+                            "Use Case Identification",
+                            "Data Strategy for AI",
+                            "Ethical AI Frameworks",
+                            "Model Selection & Implementation Plan"
+                        ]
+                    }
+                },
+                {
+                    "title": "Technical due diligence",
+                    "slug": "technical-due-diligence",
+                    "description": "Gain critical insights for technology investments, reducing risks and maximizing value for your digital ecosystem.",
+                    "details": {
+                        "overview": "Whether you are acquiring a company or assessing your own tech stack, our technical due diligence provides a comprehensive look at code quality, architecture, security, and scalability, helping you make informed investment decisions.",
+                        "offerings": [
+                            "Codebase Audits",
+                            "Architecture Review",
+                            "Security & Compliance Assessment",
+                            "Scalability & Performance Analysis",
+                            "Team & Process Evaluation"
+                        ]
+                    }
+                },
+                {
+                    "title": "Commerce strategy",
+                    "slug": "commerce-strategy",
+                    "description": "Boost revenue and expand your digital footprint with impactful commerce strategies for superior customer journeys.",
+                    "details": {
+                        "overview": "In a crowded digital marketplace, your commerce strategy must be exceptional. We help you optimize your sales channels, select the right platforms, and design seamless buying journeys that convert visitors into loyal customers.",
+                        "offerings": [
+                            "Omnichannel Strategy",
+                            "Platform Selection & Migration",
+                            "Conversion Rate Optimization (CRO)",
+                            "Customer Loyalty Programs",
+                            "Payment & Checkout Optimization"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "experience-design",
+            "title": "Experience design",
+            "description": "Crafting digital experiences that just make sense, we ensure your users are delighted and your business thrives.",
+            "link": "/services/experience-design",
+            "slug": "experience-design",
+            "details": {
+                "overview": "Great products don't just happen; they are designed. At EagleX, we believe that design is the bridge between human needs and technical possibility. We craft digital experiences that are intuitive, accessible, and delight users from the very first interaction.\n\nOur design philosophy is rooted in evidence. We don't guess; we test. By combining rigorous user research with world-class visual and interaction design, we create products that not only look beautiful but also solve real problems and drive engaging customer journeys. From complex enterprise dashboards to sleek consumer mobile apps, we tailor the experience to the context, ensuring clarity and efficiency at every touchpoint.\n\nWe view design as a strategic business driver. A well-designed product reduces training costs, lowers support burden, and significantly increases conversion rates. We work iteratively, validating our designs with real users to ensure we are constantly moving towards a solution that resonates. We don't just hand off static files; we build living design systems that evolve with your product.",
+                "methodology": [
+                    {
+                        "title": "Empathize & Define",
+                        "description": "We begin by understanding the user. Through interviews, surveys, and journey mapping, we uncover pain points and define the core problems we need to solve."
+                    },
+                    {
+                        "title": "Ideate & Prototype",
+                        "description": "We move quickly from sketches to low-fidelity wireframes. This allow us to explore multiple concepts rapidly and gather early feedback without over-investing in visual polish."
+                    },
+                    {
+                        "title": "Visual Design & System",
+                        "description": "Once the UX is validated, we apply your brand language. We create atomic design systems—reusable components that ensure consistency and speed up development."
+                    },
+                    {
+                        "title": "Test & Iterate",
+                        "description": "We put high-fidelity prototypes in front of real users. We analyze their interactions, measure success rates, and refine the design to ensure optimal usability."
+                    }
+                ],
+                "benefits": [
+                    "Increase user retention and satisfaction by reducing cognitive load and friction.",
+                    "Reduce development costs and rework by validating ideas with prototypes before writing code.",
+                    "Strengthen brand loyalty through a consistent, premium visual identity across all platforms.",
+                    "Improve accessibility to reach a wider audience and comply with global standards (WCAG).",
+                    "Streamline complex workflows into simple, intuitive interactions that boost employee productivity."
+                ],
+                "offerings": [
+                    "Experience Research & Strategy",
+                    "Product Design (UI/UX)",
+                    "Service Design",
+                    "Brand & Visual Design",
+                    "Design Systems",
+                    "Prototyping & Validation"
+                ]
+            },
+            "items": [
+                {
+                    "title": "Experience research & strategy",
+                    "slug": "experience-research-strategy",
+                    "description": "Uncover user behaviors and business needs through in-depth research, shaping thoughtful, data-driven decisions.",
+                    "details": {
+                        "overview": "Great experiences start with deep understanding. We conduct rigorous user research to uncover the 'why' behind user behaviors, providing the insights needed to build products that solving real problems and delight users.",
+                        "offerings": [
+                            "User Interviews & Surveys",
+                            "Usability Testing",
+                            "Persona Development",
+                            "Customer Journey Mapping",
+                            "Competitive Benchmarking"
+                        ]
+                    }
+                },
+                {
+                    "title": "Product design",
+                    "slug": "product-design",
+                    "description": "Create digital products that feel intuitive from the first interaction, ensuring clarity, usability, and delight.",
+                    "details": {
+                        "overview": "We believe design is about how it works, not just how it looks. Our product design team creates intuitive, accessible, and beautiful interfaces that guide users effortlessly to their goals while strengthening your brand.",
+                        "offerings": [
+                            "UI/UX Design",
+                            "Design Systems",
+                            "Wireframing & Prototyping",
+                            "Interaction Design",
+                            "Accessibility (WCAG) Compliance"
+                        ]
+                    }
+                },
+                {
+                    "title": "Service design",
+                    "slug": "service-design",
+                    "description": "Map and optimize entire customer journeys to enable seamless service delivery and efficient operations.",
+                    "details": {
+                        "overview": "Service design looks at the big picture. We align your front-stage customer experiences with your back-stage operations, ensuring that every touchpoint—digital or physical—works together in harmony.",
+                        "offerings": [
+                            "Service Blueprinting",
+                            "Touchpoint Analysis",
+                            "Organizational Design",
+                            "Process Optimization",
+                            "Employee Experience Design"
+                        ]
+                    }
+                },
+                {
+                    "title": "Brand & visual design",
+                    "slug": "brand-visual-design",
+                    "description": "Build a distinctive brand identity with robust design systems for a consistent presence across all platforms.",
+                    "details": {
+                        "overview": "Your brand is your promise. We help you articulate that promise visually. From logos to comprehensive design languages, we create distinct identities that stand out and build trust with your audience.",
+                        "offerings": [
+                            "Brand Identity & Logo Design",
+                            "Visual Style Guides",
+                            "Typography & Color Theory",
+                            "Iconography & Illustration",
+                            "Marketing Collateral Design"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "product-engineering",
+            "title": "Product engineering",
+            "description": "Unlock your enterprise’s potential with EagleX’s product engineering. We build custom software, scalable cloud infrastructure, and AI solutions.",
+            "link": "/services/product-engineering",
+            "slug": "product-engineering",
+            "details": {
+                "overview": "Code is our craft. We build software that businesses run on—scalable, secure, and maintainable. Whether it's a cloud-native platform, a data-intensive AI application, or a complex IoT ecosystem, our engineering team utilizes the best modern practices to deliver robust solutions.\n\nWe don't just write code; we engineer systems. Our full-cycle development approach covers everything from architecture design and DevOps to frontend development and quality assurance. We prioritize clean code, automated testing, and CI/CD pipelines to ensure that your software is not only delivered on time but is also easy to maintain and extend in the future.\n\nOur engineers are polyglots and problem solvers. We choose the right tool for the job, agnostic of hype but aware of trends. Whether you need high-throughput data processing, real-time communication, or pixel-perfect mobile interfaces, we have the specialized skills to execute with precision. We treat your codebase as an asset, applying the same rigor to internal tools as we do to customer-facing products.",
+                "methodology": [
+                    {
+                        "title": "Architecture & Specs",
+                        "description": "We define the technical architecture, data models, and API contracts upfront. This blueprint ensures all teams are aligned and the system is built for scalability from day one."
+                    },
+                    {
+                        "title": "Agile Development",
+                        "description": "We work in two-week sprints, delivering shipping code at the end of each cycle. Regular demos keep stakeholders in the loop and allow us to adapt to changing requirements."
+                    },
+                    {
+                        "title": "Quality Assurance",
+                        "description": "Quality is baked in, not inspected on. We use automated unit, integration, and end-to-end tests to catch regressions instantly. Continuous Integration (CI) servers run these tests on every commit."
+                    },
+                    {
+                        "title": "Deployment & DevOps",
+                        "description": "We automate infrastructure provisioning using tools like Terraform. Our deployment pipelines ensure zero-downtime updates, allowing us to deploy to production with confidence multiple times a day."
+                    }
+                ],
+                "benefits": [
+                    "Build scalable, cloud-native systems that can grow seamlessly with your business traffic.",
+                    "Ensure high availability and fault tolerance with robust architecture and disaster recovery planning.",
+                    "Accelerate delivery cycles with modern DevOps practices, automated testing, and continuous integration.",
+                    "Leverage cutting-edge technologies like AI, Machine Learning, and IoT to create competitive advantages.",
+                    "Maintain long-term code quality and reduced technical debt through rigorous peer review and standards."
+                ],
+                "offerings": [
+                    "Data Science & Analytics",
+                    "Internet of Things (IoT)",
+                    "Cloud Computing Architecture",
+                    "Software Testing & QA",
+                    "Content Management Systems (CMS)",
+                    "Custom Web & Mobile Development"
+                ]
+            },
+            "items": [
+                {
+                    "title": "Data Science",
+                    "slug": "data-science",
+                    "description": "Transform raw data into strategic assets through expert big data analytics and engineering.",
+                    "details": {
+                        "overview": "Data volumes have exploded, and the challenge is to make sense of this sea of information. EagleX helps you convert massive amounts of unstructured data into actionable insights and valuable data products that drive decision-making.",
+                        "offerings": [
+                            "Enterprise Data Warehouse",
+                            "Data Archiving & ELT Offload",
+                            "Datastore, Governance & Security",
+                            "Self Service BI / Discovery",
+                            "Strategy & Roadmap",
+                            "Real-time Ingestion",
+                            "Scalable Data Processing",
+                            "Analytics, Dash-boarding & Alerting",
+                            "Data Engineering"
+                        ]
+                    }
+                },
+                {
+                    "title": "Internet of Things (IoT)",
+                    "slug": "internet-of-things",
+                    "description": "Empower your ecosystem with robust data collection, device integration, and real-time analytics.",
+                    "details": {
+                        "overview": "EagleX delivers end-to-end IoT solutions, addressing networking, embedded systems, and middleware. We help you control data collection, manage device integration, and enable real-time analytics across your connected smart devices.",
+                        "benefits": [
+                            "Monitor business processes in real-time",
+                            "Improve customer experience",
+                            "Reduce operational costs",
+                            "Enhance employee productivity",
+                            "Adapt business models dynamically",
+                            "Make data-driven decisions",
+                            "Generate new revenue streams"
+                        ],
+                        "offerings": [
+                            "Consulting & Solution Development",
+                            "Requirement elicitation and analysis",
+                            "End-device application development",
+                            "Native & mobile application development",
+                            "System Integration",
+                            "Application testing",
+                            "Cloud hosting & Support"
+                        ],
+                        "platforms": [
+                            "Thingworx",
+                            "Cisco Virtualized Packet Core (VPC)",
+                            "Salesforce IoT Cloud",
+                            "GE Predix"
+                        ]
+                    }
+                },
+                {
+                    "title": "Cloud Computing",
+                    "slug": "cloud-computing",
+                    "description": "Architect resilient, scalable cloud infrastructure with seamless integration and multi-tenancy.",
+                    "details": {
+                        "overview": "Cloud computing offers a scalable path to access servers, storage, and databases over the Internet. We help organizations leverage IaaS, PaaS, and SaaS models to deploy applications efficiently with optimal performance.",
+                        "offerings": [
+                            "Cloud Migration & Management",
+                            "Application Re-hosting & Re-engineering",
+                            "Public, Private & Hybrid Cloud Management",
+                            "COTS Software Deployment",
+                            "Cloud VMs for Dev/Test",
+                            "High-Performance Computing (HPC)",
+                            "Cloud-Centric Application Development"
+                        ]
+                    }
+                },
+                {
+                    "title": "Software Testing",
+                    "slug": "software-testing",
+                    "description": "Ensure flawless delivery with comprehensive testing that guarantees requirements are met and defects minimized.",
+                    "details": {
+                        "overview": "We go beyond just finding bugs. Our software testing process examines the engineering lifecycle itself to reduce defect rates early. We ensure your software meets requirements, responds correctly, and performs reliably under load.",
+                        "offerings": [
+                            "Test Consulting & Advisory",
+                            "Test Automation (Mobile, Web, API)",
+                            "DevOps Assessment & Strategy",
+                            "Performance Testing & Monitoring",
+                            "Security Testing (Secure Code Review, Penetration Testing)",
+                            "Mobile Application Testing"
+                        ]
+                    }
+                },
+                {
+                    "title": "Content management systems (CMS)",
+                    "slug": "cms-solutions",
+                    "description": "Implement powerful CMS platforms that provide intuitive control over your digital content and experiences.",
+                    "details": {
+                        "overview": "Content is king, but only if you can manage it effectively. We implement and customize CMS solutions that give your team the power to publish, update, and manage content with ease, scalability, and security.",
+                        "offerings": [
+                            "Headless CMS Implementation",
+                            "CMS Migration & Upgrades",
+                            "Custom Plugin Development",
+                            "Content Modeling",
+                            "Multi-site Architecture"
+                        ]
+                    }
+                },
+                {
+                    "title": "Custom development",
+                    "slug": "custom-development",
+                    "description": "Crafting bespoke web and mobile applications tailored precisely to unique business visions.",
+                    "details": {
+                        "overview": "Off-the-shelf software doesn't always fit. When you need something unique, we build custom applications from the ground up. Using modern technologies, we engineer scalable, secure, and high-performance solutions tailored to your exact needs.",
+                        "offerings": [
+                            "Custom Web Applications",
+                            "Mobile App Development (iOS/Android)",
+                            "API Design & Integration",
+                            "Progressive Web Apps (PWA)",
+                            "SaaS Product Development"
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "cta": {
+        "title": "Stop looking for vendors. Start building partnerships.",
+        "description": "If you’re ready to move past guesswork and start making data-backed decisions that drive measurable ROI, let’s talk. Our team is ready to help you navigate what’s next.",
+        "button": "Ready to start?"
+    }
+}

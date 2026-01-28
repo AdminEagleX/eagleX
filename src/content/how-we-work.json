@@ -1,0 +1,38 @@
+{
+    "page": {
+        "title": "How We Work",
+        "subtitle": "Transparent, rigorous, and predictable. No black boxes."
+    },
+    "steps": [
+        {
+            "phase": "01",
+            "title": "Systems Immersion & Audit",
+            "description": "We don’t start with assumptions. We embed ourselves in your technical and business context to perform a deep-dive audit of your existing infrastructure, codebase, and team workflows. This allows us to identify hidden bottlenecks and map out a realistic path to modernization."
+        },
+        {
+            "phase": "02",
+            "title": "Architectural Blueprinting",
+            "description": "Success is built on a solid foundation. We design a high-level architecture that prioritizes scalability, security, and maintainability. Every decision is documented through Architecture Decision Records (ADRs), ensuring clarity on why specifically chosen technologies were selected over alternatives."
+        },
+        {
+            "phase": "03",
+            "title": "Iterative High-Impact Engineering",
+            "description": "We build in focused two-week sprints, but we don't just chase features. Our engineering process integrates best practices like Test-Driven Development (TDD) and clean code principles to ensure the system remains extensible and stable as it grows in complexity."
+        },
+        {
+            "phase": "04",
+            "title": "Rigorous Quality Gates",
+            "description": "Quality is not an afterthought; it's a prerequisite. Every line of code passes through automated testing pipelines (Unit, Integration, and E2E) and thorough peer reviews. We maintain high standards for transaction integrity and data consistency across the entire stack."
+        },
+        {
+            "phase": "05",
+            "title": "Continuous Delivery & DevOps",
+            "description": "We automate everything from infrastructure provisioning to application deployment. Using modern CI/CD pipelines and strategies like blue-green or canary releases, we ensure that new updates are delivered to production with zero downtime and maximum reliability."
+        },
+        {
+            "phase": "06",
+            "title": "Knowledge Transfer & Ownership",
+            "description": "We don't believe in vendor lock-in. As the project culminates, we provide comprehensive technical documentation, architecture walkthroughs, and operational training. Our goal is to ensure your internal team is fully equipped to sustain and evolve the system we've built together."
+        }
+    ]
+}

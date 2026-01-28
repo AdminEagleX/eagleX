@@ -1,0 +1,27 @@
+{
+    "site": {
+        "name": "EagleX",
+        "tagline": "Enterprise Consulting & Systems Engineering",
+        "description": "EagleX builds software systems designed for daily operations, long-term use, and regulatory environments.",
+        "url": "https://eaglex.com",
+        "email": "hello@eaglexinfo.com",
+        "phone": "+91 123 456 7890",
+        "address": {
+            "street": "NDA Road, Shivane",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "zip": "411023",
+            "country": "India"
+        }
+    },
+    "social": {
+        "linkedin": "https://linkedin.com/company/eaglex",
+        "twitter": "https://twitter.com/eaglex",
+        "github": "https://github.com/eaglex"
+    },
+    "emails": {
+        "general": "hello@eaglexinfo.com",
+        "sales": "growth@eaglexinfo.com",
+        "careers": "careers@eaglexinfo.com"
+    }
+}

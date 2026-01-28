@@ -1,0 +1,40 @@
+{
+    "page": {
+        "title": "About EagleX",
+        "subtitle": "A boutique engineering firm dedicated to technical excellence and architectural integrity."
+    },
+    "story": {
+        "title": "The EagleX Story",
+        "content": [
+            "Founded in 2019, EagleX was born out of a simple observation: the modern enterprise consultancy model was broken. We saw too many projects delivered as 'black boxes'—systems that were shipped with fanfare but crumbled under the weight of technical debt and poor architectural decisions within months.",
+            "Our founders, veterans of high-stakes engineering environments, decided to build something different. A firm where the distance between the client and the architect is zero. A firm that prioritizes the structural integrity of a system over its superficial features.",
+            "Today, EagleX is a boutique engineering powerhouse. We don't strive to be the largest agency; we strive to be the most rigorous. We partner with organizations that understand that in regulated, high-stakes environments, failure is not an option."
+        ]
+    },
+    "mission": {
+        "title": "Our Mission",
+        "description": "To raise the standard of engineering in the enterprise consultancy space. We move away from the industry-standard 'ship and forget' mentality towards a philosophy of 'architect and sustain'. We build systems that are not just ready for today, but resilient enough for the next decade."
+    },
+    "methodology": {
+        "title": "Our Methodology",
+        "description": "We apply rigorous engineering principles usually reserved for critical infrastructure to modern business applications. Tests are not optional. Documentation is not an afterthought. Security is baked in from the first line of code. We believe that speed in development is a byproduct of high-quality architecture, not a shortcut taken at its expense."
+    },
+    "values": [
+        {
+            "title": "Systems > Features",
+            "description": "We prioritize structural integrity and long-term maintainability over superficial features. A feature that breaks the system is a liability, not an asset."
+        },
+        {
+            "title": "Clarity > Cleverness",
+            "description": "We write code that can be read and maintained by humans. We avoid 'clever' hacks that save seconds today but cost days of debugging tomorrow."
+        },
+        {
+            "title": "Speed is a Byproduct",
+            "description": "We don't optimize prematurely, but we never build slow. True speed comes from a codebase that is easy to reason about and safe to change."
+        },
+        {
+            "title": "Transparency by Default",
+            "description": "No black boxes. Our clients have full visibility into our architectural decisions, our codebase, and our progress at every stage of the lifecycle."
+        }
+    ]
+}
