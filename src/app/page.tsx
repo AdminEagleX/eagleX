@@ -24,7 +24,6 @@ export default function Home() {
           <Hero
             title={hero.title}
             titleRotating={hero.titleRotating}
-            history={hero.history}
             subtitle={hero.subtitle}
             primaryCta={hero.primaryCta}
             secondaryCta={hero.secondaryCta}

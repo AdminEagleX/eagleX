@@ -4,13 +4,13 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, ReactNode } from "react";
 
 interface ParallaxSectionProps {
-    children: ReactNode;
+    children?: ReactNode;
     speed?: number;
     className?: string;
 }
 
 const ParallaxSection: React.FC<ParallaxSectionProps> = ({
-    children,
+    children = null,
     speed = 0.5,
     className = ""
 }) => {

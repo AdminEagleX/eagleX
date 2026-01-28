@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { ReactNode } from "react";
 import { Check } from "lucide-react";
 
@@ -17,7 +17,7 @@ const StaggeredList: React.FC<StaggeredListProps> = ({
     delay = 0,
     className = ""
 }) => {
-    const container = {
+    const container: Variants = {
         hidden: { opacity: 0 },
         show: {
             opacity: 1,
@@ -28,14 +28,14 @@ const StaggeredList: React.FC<StaggeredListProps> = ({
         }
     };
 
-    const item = {
+    const item: Variants = {
         hidden: { opacity: 0, x: -20 },
         show: {
             opacity: 1,
             x: 0,
             transition: {
                 duration: 0.5,
-                ease: [0.25, 0.4, 0.25, 1]
+                ease: [0.25, 0.4, 0.25, 1] as const
             }
         }
     };
