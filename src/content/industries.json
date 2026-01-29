@@ -48,5 +48,10 @@
                 "Marketplace Multi-vendor Systems"
             ]
         }
-    ]
+    ],
+    "cta": {
+        "title": "Ready to Redefine Your Industry?",
+        "description": "Whether you need to modernize legacy infrastructure or build a compliant platform from the ground up, we have the expertise to deliver.",
+        "button": "Let's Build It"
+    }
 }

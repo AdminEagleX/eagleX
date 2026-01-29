@@ -73,8 +73,8 @@ const Hero: React.FC<HeroProps> = ({
                         }}
                     ></div>
                     {/* Floating circles for visual interest */}
-                    <div className="absolute top-20 right-20 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
-                    <div className="absolute bottom-20 left-20 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{ animationDelay: '2s' }}></div>
+                    <div className="absolute top-20 right-20 w-72 h-72 bg-purple-200/30 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
+                    <div className="absolute bottom-20 left-20 w-72 h-72 bg-pink-200/30 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{ animationDelay: '2s' }}></div>
                 </>
             )}
 

@@ -18,7 +18,7 @@ const FadeIn = ({
     delay = 0,
     direction = "up",
     duration = 0.5,
-    viewport = { once: true, margin: "-50px" },
+    viewport = { once: true, margin: "0px" },
 }: FadeInProps) => {
     const shouldReduceMotion = useReducedMotion();
 
@@ -46,7 +46,7 @@ const FadeIn = ({
         <motion.div
             initial={getInitialProps()}
             whileInView={{ opacity: 1, x: 0, y: 0 }}
-            viewport={viewport}
+            viewport={{ once: true, margin: "0px", amount: 0.2 }}
             transition={{
                 duration: 0.6,
                 delay,

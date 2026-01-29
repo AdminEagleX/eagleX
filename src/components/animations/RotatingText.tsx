@@ -19,7 +19,7 @@ export default function RotatingText({ words, className = "" }: RotatingTextProp
     }, [words.length]);
 
     return (
-        <span className={`inline-grid relative overflow-hidden ${className}`} style={{ height: '1.2em' }}>
+        <span className="inline-grid relative overflow-hidden" style={{ height: '1.2em' }}>
             <AnimatePresence mode="wait" initial={false}>
                 <motion.span
                     key={index}
@@ -30,7 +30,7 @@ export default function RotatingText({ words, className = "" }: RotatingTextProp
                         duration: 0.5,
                         ease: [0.22, 1, 0.36, 1], // Premium easing
                     }}
-                    className="col-start-1 row-start-1 flex items-center whitespace-nowrap"
+                    className={`col-start-1 row-start-1 flex items-center whitespace-nowrap ${className}`}
                 >
                     {words[index]}
                 </motion.span>

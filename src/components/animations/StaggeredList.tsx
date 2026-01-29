@@ -45,7 +45,7 @@ const StaggeredList: React.FC<StaggeredListProps> = ({
             variants={container}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true, margin: "-10px" }}
             className={className}
         >
             {items.map((listItem, idx) => (
