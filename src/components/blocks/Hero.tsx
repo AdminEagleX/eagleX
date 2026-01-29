@@ -88,6 +88,8 @@ const Hero: React.FC<HeroProps> = ({
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight mb-8 leading-[1.1] overflow-hidden">
                         {renderTitle()}
                     </h1>
+
+                
                     <p className={cn("text-lg md:text-xl mb-10 max-w-2xl leading-relaxed", variant === "dark" ? "text-slate-300" : "text-slate-600")}>
                         {subtitle}
                     </p>
