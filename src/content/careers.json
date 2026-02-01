@@ -1,0 +1,106 @@
+{
+    "page": {
+        "title": "Careers at EagleX",
+        "subtitle": "We build reliable systems for high-stakes environments. If you value engineering rigor, clear communication, and ethical work, we would like to hear from you."
+    },
+    "principles": {
+        "title": "How we work",
+        "items": [
+            {
+                "title": "Engineering integrity",
+                "description": "We design for long-term maintainability, security, and correctness — not shortcuts."
+            },
+            {
+                "title": "Professional ethics",
+                "description": "We operate with accountability, transparency, and respect for clients, users, and teammates."
+            },
+            {
+                "title": "Quality and clarity",
+                "description": "We prefer readable, well-tested, well-documented systems that are safe to change."
+            }
+        ]
+    },
+    "process": {
+        "title": "Hiring process",
+        "steps": [
+            {
+                "title": "Application review",
+                "description": "We review your resume and a short note about the role you want and the work you have done."
+            },
+            {
+                "title": "Intro call",
+                "description": "A quick call to align on role expectations, experience, and timelines."
+            },
+            {
+                "title": "Technical discussion",
+                "description": "A practical conversation about systems, problem-solving, and your approach to engineering."
+            },
+            {
+                "title": "Final conversation",
+                "description": "A final discussion on culture fit, ethics, and how you collaborate in real projects."
+            }
+        ]
+    },
+    "roles": [
+        {
+            "id": "fullstack-engineer",
+            "title": "Full-Stack Engineer",
+            "location": "Pune, India (Hybrid)",
+            "type": "Full-time",
+            "experience": "2-5 years",
+            "summary": "Build and maintain reliable web applications across frontend and backend with strong engineering fundamentals.",
+            "responsibilities": [
+                "Design and implement features end-to-end with clean, testable code.",
+                "Collaborate with product and engineering to define scope and delivery.",
+                "Participate in code reviews and improve architecture and performance."
+            ],
+            "requirements": [
+                "Experience with modern JavaScript/TypeScript and web fundamentals.",
+                "Comfort working across UI, APIs, and data layers.",
+                "Strong communication and ownership mindset."
+            ]
+        },
+        {
+            "id": "frontend-engineer",
+            "title": "Frontend Engineer (Next.js)",
+            "location": "Remote / India",
+            "type": "Full-time",
+            "experience": "2-5 years",
+            "summary": "Own high-quality UI delivery using Next.js with a focus on performance, accessibility, and maintainable component design.",
+            "responsibilities": [
+                "Build responsive pages and reusable UI components.",
+                "Improve performance (Core Web Vitals) and accessibility.",
+                "Work closely with design to implement polished user experiences."
+            ],
+            "requirements": [
+                "Hands-on experience with Next.js and React.",
+                "Solid understanding of HTML, CSS, and accessibility best practices.",
+                "Experience with component-driven development and code reviews."
+            ]
+        },
+        {
+            "id": "devops-engineer",
+            "title": "DevOps / Cloud Engineer",
+            "location": "Remote / India",
+            "type": "Full-time",
+            "experience": "3-6 years",
+            "summary": "Improve reliability, observability, and deployment pipelines for production systems.",
+            "responsibilities": [
+                "Build CI/CD pipelines and deployment automation.",
+                "Improve monitoring, logging, and incident response playbooks.",
+                "Support secure infrastructure practices and access controls."
+            ],
+            "requirements": [
+                "Experience with cloud infrastructure and modern CI/CD tooling.",
+                "Strong understanding of security basics and least-privilege access.",
+                "Ability to troubleshoot production issues methodically."
+            ]
+        }
+    ],
+    "equalOpportunity": "EagleX is an equal opportunity employer. We make hiring decisions based on skills, experience, and role alignment, and we do not tolerate discrimination or harassment.",
+    "apply": {
+        "title": "How to apply",
+        "subtitle": "Email your resume, portfolio (if applicable), and a short note about the role you are applying for.",
+        "ctaLabel": "Apply via email"
+    }
+}

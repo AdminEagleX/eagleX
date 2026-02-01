@@ -23,6 +23,10 @@
         {
             "label": "About",
             "href": "/about"
+        },
+        {
+            "label": "Careers",
+            "href": "/carres"
         }
     ],
     "footer": {
@@ -33,7 +37,7 @@
             },
             {
                 "label": "Careers",
-                "href": "/about"
+                "href": "/carres"
             },
             {
                 "label": "Contact",
