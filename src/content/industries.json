@@ -6,6 +6,7 @@
     "items": [
         {
             "name": "FinTech & Banking",
+            "image": "/asset/industry-fintech-dark.svg",
             "description": "Financial systems demand absolute precision. We build ledger-based architectures that guarantee transaction integrity, even at massive scale. From real-time fraud detection pipelines to automated reconciliation systems, we engineer software that banks and fintechs trust with their core assets. We understand that 'eventual consistency' isn't good enough when money is on the line.",
             "features": [
                 "Double-entry Immutable Ledgers",
@@ -17,6 +18,7 @@
         },
         {
             "name": "Healthcare & MedTech",
+            "image": "/asset/industry-healthcare-dark.svg",
             "description": "In healthcare, data interoperability saves lives. We build secure, HIPAA-compliant platforms that break down information silos. Whether it's integrating with legacy EHR systems using FHIR standards or building patient-facing telemedicine apps, we ensure that sensitive health data is accessible when needed and protected always.",
             "features": [
                 "HIPAA & GDPR Compliance",
@@ -28,6 +30,7 @@
         },
         {
             "name": "Logistics & Supply Chain",
+            "image": "/asset/industry-logistics-dark.svg",
             "description": "Modern supply chains run on data, not just trucks. We build visibility execution platforms that track inventory in real-time, optimize “last mile” delivery routes using geospatial algorithms, and predict demand spikes before they happen. We help you move physical goods faster by moving digital information smarter.",
             "features": [
                 "Real-time IoT Telemetry",
@@ -39,6 +42,7 @@
         },
         {
             "name": "Retail & E-commerce",
+            "image": "/asset/industry-retail-dark.svg",
             "description": "Clicks are cheap; conversions are hard. We engineer headless commerce solutions that load instantly and handle Black Friday traffic spikes without breaking a sweat. By decoupling the frontend from the backend, we give marketing teams the freedom to iterate on customer experiences while ensuring the transaction engine remains rock-solid.",
             "features": [
                 "Headless Commerce Architecture",

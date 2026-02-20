@@ -22,30 +22,31 @@ export default function CarresPage() {
     )}`;
 
     return (
-        <>
-            <Section className="pt-32 pb-20 bg-white relative overflow-hidden">
+        <div className="bg-black min-h-screen text-white overflow-hidden">
+            <Section className="pt-32 pb-20 relative overflow-hidden">
                 <ParticleBackground />
 
-                <div className="absolute inset-0 opacity-20 pointer-events-none">
-                    <ParallaxSection speed={0.4}>
-                        <div className="absolute top-0 right-0 w-96 h-96 bg-purple-200 rounded-full blur-3xl"></div>
+                {/* Dark Mode Gradient Background Mesh with Parallax */}
+                <div className="absolute inset-0 opacity-40 pointer-events-none mix-blend-screen overflow-hidden">
+                    <ParallaxSection speed={0.3}>
+                        <div className="absolute top-[-10%] right-[-10%] w-[60vw] h-[60vw] bg-purple-900/40 rounded-full blur-[120px] mix-blend-screen" style={{ animation: "float 15s ease-in-out infinite alternate" }}></div>
                     </ParallaxSection>
-                    <ParallaxSection speed={0.6}>
-                        <div className="absolute bottom-0 left-0 w-80 h-80 bg-pink-200 rounded-full blur-3xl"></div>
+                    <ParallaxSection speed={0.5}>
+                        <div className="absolute bottom-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-indigo-900/40 rounded-full blur-[100px] mix-blend-screen" style={{ animation: "float 20s ease-in-out infinite alternate-reverse" }}></div>
                     </ParallaxSection>
                 </div>
 
                 <FadeIn>
                     <div className="max-w-4xl relative z-10">
-                        <h1 className="text-5xl md:text-6xl font-semibold text-slate-900 mb-8 leading-tight">
+                        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-[1.05]">
                             {careersContent.page.title}
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-3xl">
+                        <p className="text-xl md:text-3xl text-slate-400 leading-relaxed max-w-3xl font-light">
                             {careersContent.page.subtitle}
                         </p>
 
                         <div className="mt-10 flex flex-col sm:flex-row gap-4">
-                            <Button href="#open-roles" variant="secondary" showArrow>
+                            <Button href="#open-roles" variant="outline" showArrow>
                                 View open roles
                             </Button>
                             <Button href={mailtoHref} variant="primary" showArrow>
@@ -57,12 +58,10 @@ export default function CarresPage() {
             </Section>
 
             <Section className="relative">
-                <ParallaxSection speed={0.2} className="absolute right-0 top-0 w-64 h-64 bg-purple-50 rounded-full blur-2xl opacity-50 -z-10" />
-
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                     <div>
                         <ScrollReveal delay={0.05}>
-                            <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-6">
+                            <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
                                 {careersContent.principles.title}
                             </h2>
                         </ScrollReveal>
@@ -70,9 +69,9 @@ export default function CarresPage() {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             {careersContent.principles.items.map((item, index) => (
                                 <ScrollReveal key={item.title} delay={0.08 * index}>
-                                    <Card className="border-2 border-slate-100" hover>
-                                        <h3 className="text-lg font-semibold text-slate-900 mb-2">{item.title}</h3>
-                                        <p className="text-slate-600 leading-relaxed">{item.description}</p>
+                                    <Card background="dark" className="border-white/[0.06] hover:bg-white/[0.06] transition-colors duration-300" hover>
+                                        <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
+                                        <p className="text-slate-400 leading-relaxed">{item.description}</p>
                                     </Card>
                                 </ScrollReveal>
                             ))}
@@ -81,7 +80,7 @@ export default function CarresPage() {
 
                     <div>
                         <ScrollReveal delay={0.08}>
-                            <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-6">
+                            <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
                                 {careersContent.process.title}
                             </h2>
                         </ScrollReveal>
@@ -89,14 +88,14 @@ export default function CarresPage() {
                         <div className="space-y-5">
                             {careersContent.process.steps.map((step, index) => (
                                 <ScrollReveal key={step.title} delay={0.08 * index}>
-                                    <Card className="border-2 border-slate-100">
+                                    <Card background="dark" className="border-white/[0.06]">
                                         <div className="flex gap-4">
-                                            <div className="shrink-0 w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center text-sm font-semibold">
+                                            <div className="shrink-0 w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center text-sm font-semibold shadow-[0_0_15px_rgba(123,37,235,0.3)]">
                                                 {index + 1}
                                             </div>
                                             <div>
-                                                <h3 className="text-lg font-semibold text-slate-900 mb-1">{step.title}</h3>
-                                                <p className="text-slate-600 leading-relaxed">{step.description}</p>
+                                                <h3 className="text-lg font-semibold text-white mb-1">{step.title}</h3>
+                                                <p className="text-slate-400 leading-relaxed">{step.description}</p>
                                             </div>
                                         </div>
                                     </Card>
@@ -107,11 +106,11 @@ export default function CarresPage() {
                 </div>
             </Section>
 
-            <Section id="open-roles" variant="muted">
+            <Section id="open-roles">
                 <ScrollReveal delay={0.05}>
                     <div className="max-w-3xl">
-                        <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-4">Open roles</h2>
-                        <p className="text-slate-600 leading-relaxed">
+                        <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4">Open roles</h2>
+                        <p className="text-slate-400 leading-relaxed">
                             We are currently hiring for the positions below. If you are a strong match, apply via email and include the role title in your subject line.
                         </p>
                     </div>
@@ -120,29 +119,29 @@ export default function CarresPage() {
                 <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {careersContent.roles.map((role, index) => (
                         <ScrollReveal key={role.id} delay={0.08 * index}>
-                            <Card className="border-2 border-slate-200/70" hover>
+                            <Card background="dark" className="border-white/[0.06] hover:border-white/[0.1] transition-colors duration-300" hover>
                                 <div className="flex flex-col gap-4">
                                     <div>
-                                        <h3 className="text-2xl font-semibold text-slate-900">{role.title}</h3>
-                                        <p className="text-slate-600 mt-1">{role.summary}</p>
+                                        <h3 className="text-2xl font-semibold text-white">{role.title}</h3>
+                                        <p className="text-slate-400 mt-1">{role.summary}</p>
                                     </div>
 
                                     <div className="flex flex-wrap gap-2 text-sm">
-                                        <span className="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700">
+                                        <span className="px-3 py-1 rounded-full bg-white/[0.06] border border-white/[0.08] text-slate-300">
                                             {role.location}
                                         </span>
-                                        <span className="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700">
+                                        <span className="px-3 py-1 rounded-full bg-white/[0.06] border border-white/[0.08] text-slate-300">
                                             {role.type}
                                         </span>
-                                        <span className="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700">
+                                        <span className="px-3 py-1 rounded-full bg-white/[0.06] border border-white/[0.08] text-slate-300">
                                             {role.experience}
                                         </span>
                                     </div>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
-                                            <h4 className="text-sm font-semibold text-slate-900 mb-2">Responsibilities</h4>
-                                            <ul className="list-disc pl-5 space-y-1 text-sm text-slate-600">
+                                            <h4 className="text-sm font-semibold text-white mb-2">Responsibilities</h4>
+                                            <ul className="list-disc pl-5 space-y-1 text-sm text-slate-400">
                                                 {role.responsibilities.map((item) => (
                                                     <li key={item}>{item}</li>
                                                 ))}
@@ -150,8 +149,8 @@ export default function CarresPage() {
                                         </div>
 
                                         <div>
-                                            <h4 className="text-sm font-semibold text-slate-900 mb-2">Requirements</h4>
-                                            <ul className="list-disc pl-5 space-y-1 text-sm text-slate-600">
+                                            <h4 className="text-sm font-semibold text-white mb-2">Requirements</h4>
+                                            <ul className="list-disc pl-5 space-y-1 text-sm text-slate-400">
                                                 {role.requirements.map((item) => (
                                                     <li key={item}>{item}</li>
                                                 ))}
@@ -172,13 +171,13 @@ export default function CarresPage() {
 
                 <div className="mt-10">
                     <ScrollReveal delay={0.2}>
-                        <Card className="border-2 border-slate-200/70">
+                        <Card background="dark" className="border-white/[0.06]">
                             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
                                 <div>
-                                    <h3 className="text-xl font-semibold text-slate-900 mb-2">{careersContent.apply.title}</h3>
-                                    <p className="text-slate-600 leading-relaxed">
+                                    <h3 className="text-xl font-semibold text-white mb-2">{careersContent.apply.title}</h3>
+                                    <p className="text-slate-400 leading-relaxed">
                                         {careersContent.apply.subtitle}
-                                        <span className="block mt-2 text-slate-700 font-medium">{siteContent.emails.careers}</span>
+                                        <span className="block mt-2 text-purple-400 font-medium">{siteContent.emails.careers}</span>
                                     </p>
                                 </div>
                                 <div className="shrink-0">
@@ -199,6 +198,6 @@ export default function CarresPage() {
                     </ScrollReveal>
                 </div>
             </Section>
-        </>
+        </div>
     );
 }

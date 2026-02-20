@@ -1,0 +1,44 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 420) rotate(90) scale(520 760)">
+      <stop stop-color="#080B16"/>
+      <stop offset="1" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="g1" x1="220" y1="130" x2="1000" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A855F7" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#22D3EE" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FB7185" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="300" y1="720" x2="980" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity="0.18"/>
+      <stop offset="0.55" stop-color="#A855F7" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FB7185" stop-opacity="0.18"/>
+    </linearGradient>
+    <filter id="blur" x="-40%" y="-40%" width="180%" height="180%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="18" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 16 -5" result="c"/>
+      <feMerge>
+        <feMergeNode in="c"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)"/>
+
+  <g filter="url(#blur)" opacity="0.95">
+    <path d="M240 285C296 150 470 110 606 156C742 202 792 306 886 360C1012 433 1090 516 1015 629C940 742 776 743 620 707C464 671 402 578 320 514C232 444 191 392 240 285Z" fill="url(#g1)"/>
+    <path d="M352 678C310 638 328 548 410 503C492 458 600 458 704 430C836 394 922 332 984 398C1046 464 1022 574 925 640C828 706 690 730 575 722C470 715 394 721 352 678Z" fill="url(#g2)"/>
+  </g>
+
+  <g filter="url(#glow)" opacity="0.88">
+    <path d="M316 538C296 525 290 499 304 479L456 267C474 242 508 235 538 252L898 455C928 472 939 511 922 539L808 716C791 742 759 751 731 736L316 538Z" fill="#0B1220" fill-opacity="0.38"/>
+    <path d="M316 538C296 525 290 499 304 479L456 267C474 242 508 235 538 252L898 455C928 472 939 511 922 539L808 716C791 742 759 751 731 736L316 538Z" stroke="white" stroke-opacity="0.10"/>
+
+    <path d="M430 450L780 620" stroke="white" stroke-opacity="0.10" stroke-width="8" stroke-linecap="round"/>
+    <path d="M488 352L860 532" stroke="white" stroke-opacity="0.10" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

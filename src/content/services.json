@@ -10,6 +10,7 @@
             "description": "We partner with ambitious enterprises to achieve a competitive edge through digital transformation, crafting clear, innovative strategies for future-ready products and platforms.",
             "link": "/services/strategy",
             "slug": "strategy",
+            "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop",
             "details": {
                 "overview": "In an era of rapid technical disruption, hope is not a strategy. We help ambitious enterprises navigate uncertainty and achieve a sustainable competitive edge through rigorous, data-driven planning.\n\nOur strategic approach goes beyond high-level slide decks; we ground our recommendations in technical reality and deep market data. We partner with C-suite leaders to define clear, actionable roadmaps that align technology investments with business outcomes, ensuring that every initiative drives measurable value. Whether you are modernizing a legacy core, launching a new digital venture, or integrating AI into your workflow, our strategy practice ensures you are building the right thing, at the right time, for the right reasons.\n\nWe believe that true digital transformation requires a holistic view—combining business acumen, technical expertise, and organizational change management. We don't just deliver a plan; we provide the architectural blueprint and the implementation guide to make it a reality. Our consultants act as extensions of your executive team, challenging assumptions and uncovering hidden opportunities for growth.",
                 "methodology": [
@@ -144,6 +145,7 @@
             "description": "Crafting digital experiences that just make sense, we ensure your users are delighted and your business thrives.",
             "link": "/services/experience-design",
             "slug": "experience-design",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
             "details": {
                 "overview": "Great products don't just happen; they are designed. At EagleX, we believe that design is the bridge between human needs and technical possibility. We craft digital experiences that are intuitive, accessible, and delight users from the very first interaction.\n\nOur design philosophy is rooted in evidence. We don't guess; we test. By combining rigorous user research with world-class visual and interaction design, we create products that not only look beautiful but also solve real problems and drive engaging customer journeys. From complex enterprise dashboards to sleek consumer mobile apps, we tailor the experience to the context, ensuring clarity and efficiency at every touchpoint.\n\nWe view design as a strategic business driver. A well-designed product reduces training costs, lowers support burden, and significantly increases conversion rates. We work iteratively, validating our designs with real users to ensure we are constantly moving towards a solution that resonates. We don't just hand off static files; we build living design systems that evolve with your product.",
                 "methodology": [
@@ -249,6 +251,7 @@
             "description": "Unlock your enterprise’s potential with EagleX’s product engineering. We build custom software, scalable cloud infrastructure, and AI solutions.",
             "link": "/services/product-engineering",
             "slug": "product-engineering",
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop",
             "details": {
                 "overview": "Code is our craft. We build software that businesses run on—scalable, secure, and maintainable. Whether it's a cloud-native platform, a data-intensive AI application, or a complex IoT ecosystem, our engineering team utilizes the best modern practices to deliver robust solutions.\n\nWe don't just write code; we engineer systems. Our full-cycle development approach covers everything from architecture design and DevOps to frontend development and quality assurance. We prioritize clean code, automated testing, and CI/CD pipelines to ensure that your software is not only delivered on time but is also easy to maintain and extend in the future.\n\nOur engineers are polyglots and problem solvers. We choose the right tool for the job, agnostic of hype but aware of trends. Whether you need high-throughput data processing, real-time communication, or pixel-perfect mobile interfaces, we have the specialized skills to execute with precision. We treat your codebase as an asset, applying the same rigor to internal tools as we do to customer-facing products.",
                 "methodology": [

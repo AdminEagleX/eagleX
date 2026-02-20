@@ -19,15 +19,15 @@ const InsightCard: React.FC<InsightCardProps> = ({ slug, title, date, category, 
 
     return (
         <Link href={`/insights/${slug}`} className="block group">
-            <article className="p-8 bg-slate-50 rounded-2xl group-hover:bg-slate-100 transition-colors duration-300">
+            <article className="p-8 rounded-2xl border border-white/[0.06] bg-white/[0.03] backdrop-blur-sm transition-all duration-300 group-hover:bg-white/[0.06] group-hover:border-white/[0.1] group-hover:shadow-[0_10px_40px_-20px_rgba(123,37,235,0.2)]">
                 <div className="flex items-center justify-between mb-4">
                     <Badge variant="default">{category}</Badge>
-                    <span className="text-sm text-slate-400">{formattedDate}</span>
+                    <span className="text-sm text-slate-500">{formattedDate}</span>
                 </div>
-                <h2 className="text-xl lg:text-2xl font-medium text-slate-900 group-hover:text-slate-700 transition-colors mb-3 leading-tight">
+                <h2 className="text-xl lg:text-2xl font-medium text-white group-hover:text-slate-200 transition-colors mb-3 leading-tight">
                     {title}
                 </h2>
-                <p className="text-slate-600 leading-relaxed line-clamp-2">{excerpt}</p>
+                <p className="text-slate-400 leading-relaxed line-clamp-2">{excerpt}</p>
             </article>
         </Link>
     );

@@ -21,6 +21,22 @@ function getServiceBySlug(slug: string) {
     return null;
 }
 
+export async function generateStaticParams() {
+    const params: { slug: string }[] = [];
+
+    // Add top-level capability slugs
+    servicesContent.capabilities.forEach((cap: any) => {
+        params.push({ slug: cap.slug });
+
+        // Add sub-item slugs
+        cap.items.forEach((item: any) => {
+            params.push({ slug: item.slug });
+        });
+    });
+
+    return params;
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
     const { slug } = await params;
     const service = getServiceBySlug(slug);

@@ -15,6 +15,9 @@ export function generatePageMetadata({ title, description, path = "" }: Metadata
         title: fullTitle,
         description,
         metadataBase: new URL(siteUrl),
+        alternates: {
+            canonical: `${siteUrl}${path}`,
+        },
         openGraph: {
             title: fullTitle,
             description,

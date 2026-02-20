@@ -12,6 +12,12 @@ function getInsightBySlug(slug: string) {
     return insightsContent.posts.find((item: any) => item.slug === slug);
 }
 
+export async function generateStaticParams() {
+    return insightsContent.posts.map((post: any) => ({
+        slug: post.slug,
+    }));
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
     const { slug } = await params;
     const post = getInsightBySlug(slug);

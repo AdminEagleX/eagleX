@@ -23,7 +23,7 @@ const Navbar = () => {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }} // Custom easing
-            className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100/50 shadow-sm"
+            className="fixed top-0 w-full z-50 bg-black/50 backdrop-blur-md border-b border-white/10 shadow-sm"
         >
             <Container>
                 <div className="h-16 lg:h-20 flex items-center justify-between">
@@ -34,7 +34,7 @@ const Navbar = () => {
                             alt="EagleX Logo"
                             width={120}
                             height={40}
-                            className="h-8 lg:h-10 w-auto"
+                            className="h-8 lg:h-10 w-auto invert hover:brightness-200 transition-all"
                             priority
                         />
                     </Link>
@@ -46,10 +46,10 @@ const Navbar = () => {
                                 key={link.href}
                                 href={link.href}
                                 className={cn(
-                                    "text-sm font-medium transition-colors",
+                                    "text-sm font-medium transition-colors hover:text-glow",
                                     isActive(link.href)
-                                        ? "text-slate-900"
-                                        : "text-slate-500 hover:text-slate-900"
+                                        ? "text-white"
+                                        : "text-slate-400 hover:text-white"
                                 )}
                             >
                                 {link.label}
@@ -66,7 +66,7 @@ const Navbar = () => {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="lg:hidden p-2 text-slate-900"
+                        className="lg:hidden p-2 text-white hover:text-purple-400 transition-colors"
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
                         aria-expanded={mobileMenuOpen}
@@ -83,7 +83,7 @@ const Navbar = () => {
                             animate={{ opacity: 1, height: "auto" }}
                             exit={{ opacity: 0, height: 0 }}
                             transition={{ duration: 0.3, ease: "easeInOut" }}
-                            className="lg:hidden p-4 border-t border-slate-100 overflow-hidden"
+                            className="lg:hidden p-4 border-t border-white/10 overflow-hidden bg-black/95 backdrop-blur-md"
                         >
                             <div className="flex flex-col space-y-4">
                                 {navigation.main.map((link) => (
@@ -91,10 +91,10 @@ const Navbar = () => {
                                         key={link.href}
                                         href={link.href}
                                         className={cn(
-                                            "text-base font-medium py-2",
+                                            "text-base font-medium py-2 transition-colors",
                                             isActive(link.href)
-                                                ? "text-slate-900"
-                                                : "text-slate-500 hover:text-slate-900"
+                                                ? "text-white"
+                                                : "text-slate-400 hover:text-white"
                                         )}
                                         onClick={() => setMobileMenuOpen(false)}
                                     >

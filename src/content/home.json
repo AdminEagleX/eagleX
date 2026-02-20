@@ -1,6 +1,6 @@
 {
     "hero": {
-        "title": "Engineering for {rotation}.",
+        "title": "Engineering for {rotation}",
         "titleRotating": [
             "Critical Operations",
             "Unstoppable Scale",

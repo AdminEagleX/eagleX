@@ -20,9 +20,9 @@ const Section: React.FC<SectionProps> = ({
     containerSize = "default",
 }) => {
     const variants = {
-        default: "bg-white text-slate-900",
-        dark: "bg-slate-900 text-white",
-        muted: "bg-slate-50 text-slate-900",
+        default: "relative z-10",
+        dark: "bg-black text-white",
+        muted: "bg-slate-900/50 text-white",
         accent: "bg-accent text-white",
     };
 
