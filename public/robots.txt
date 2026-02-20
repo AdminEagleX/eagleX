@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /private/
+
+# Host
+Host: https://eaglex.com
+
+# Sitemaps
+Sitemap: https://eaglex.com/sitemap.xml
