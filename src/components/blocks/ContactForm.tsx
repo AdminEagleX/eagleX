@@ -90,16 +90,16 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="bg-white p-8 md:p-10 rounded-3xl border border-slate-100 shadow-sm">
+        <div className="p-8 md:p-10 rounded-3xl border border-white/[0.06] bg-white/[0.03] backdrop-blur-sm">
             {submitStatus === "success" ? (
                 <div className="text-center py-12">
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg className="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="w-16 h-16 bg-green-500/15 border border-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg className="w-8 h-8 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                     </div>
-                    <h3 className="text-2xl font-medium text-slate-900 mb-3">Message Sent</h3>
-                    <p className="text-slate-600 leading-relaxed">{contactContent.form.successMessage}</p>
+                    <h3 className="text-2xl font-medium text-white mb-3">Message Sent</h3>
+                    <p className="text-slate-400 leading-relaxed">{contactContent.form.successMessage}</p>
                 </div>
             ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -162,7 +162,7 @@ const ContactForm = () => {
                     />
 
                     {submitStatus === "error" && (
-                        <p className="text-red-500 text-sm">{contactContent.form.errorMessage}</p>
+                        <p className="text-red-400 text-sm">{contactContent.form.errorMessage}</p>
                     )}
 
                     <Button type="submit" variant="primary" className="w-full" size="lg" isLoading={isSubmitting}>

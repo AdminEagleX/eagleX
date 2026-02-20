@@ -45,10 +45,10 @@
     --color-neutral-900: #0f172a;
 
     /* Colors - Semantic */
-    --color-background: #ffffff;
-    --color-foreground: #0f172a;
-    --color-muted: #f1f5f9;
-    --color-border: #e2e8f0;
+    --color-background: #000000;
+    --color-foreground: #f8fafc;
+    --color-muted: #1e293b;
+    --color-border: #334155;
 
     /* Glassmorphism */
     --glass-bg: rgba(255, 255, 255, 0.8);

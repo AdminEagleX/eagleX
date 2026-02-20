@@ -7,7 +7,7 @@ interface CardProps {
     hover?: boolean;
     padding?: "none" | "sm" | "md" | "lg";
     rounded?: "md" | "lg" | "xl" | "2xl" | "3xl";
-    background?: "white" | "muted" | "transparent";
+    background?: "white" | "muted" | "transparent" | "dark";
 }
 
 const Card: React.FC<CardProps> = ({
@@ -37,6 +37,7 @@ const Card: React.FC<CardProps> = ({
         white: "bg-white",
         muted: "bg-slate-50",
         transparent: "bg-transparent",
+        dark: "bg-white/[0.04] border border-white/[0.06]",
     };
 
     return (

@@ -5,6 +5,8 @@ import Button from "@/components/ui/Button";
 import FadeIn from "@/components/animations/FadeIn";
 import { generatePageMetadata } from "@/lib/metadata";
 import { Metadata } from "next";
+import { generateServiceSchema } from "@/lib/jsonLd";
+import siteContent from "@/content/site.json";
 
 // Helper to find service by slug
 // Helper to find service by slug
@@ -21,8 +23,24 @@ function getServiceBySlug(slug: string) {
     return null;
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-    const { slug } = await params;
+export async function generateStaticParams() {
+    const params: { slug: string }[] = [];
+
+    // Add top-level capability slugs
+    servicesContent.capabilities.forEach((cap: any) => {
+        params.push({ slug: cap.slug });
+
+        // Add sub-item slugs
+        cap.items.forEach((item: any) => {
+            params.push({ slug: item.slug });
+        });
+    });
+
+    return params;
+}
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+    const { slug } = params;
     const service = getServiceBySlug(slug);
     if (!service) return {};
 
@@ -33,8 +51,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     });
 }
 
-export default async function ServiceDetailPage({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params;
+export default async function ServiceDetailPage({ params }: { params: { slug: string } }) {
+    const { slug } = params;
     const service: any = getServiceBySlug(slug);
 
     if (!service || !service.details) {
@@ -42,9 +60,18 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
     }
 
     const { details } = service;
+    const jsonLd = generateServiceSchema(
+        service.title,
+        service.description,
+        `${siteContent.site.url.replace(/\/+$/, "")}/services/${slug}`
+    );
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             {/* Hero */}
             <Section variant="dark" className="pt-32 pb-20">
                 <FadeIn>

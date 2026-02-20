@@ -7,6 +7,7 @@
         {
             "client": "Global Logistics Co.",
             "title": "AI-Driven Logistics Optimization",
+            "image": "/asset/case-study-global-logistics-dark.svg",
             "metrics": [
                 {
                     "value": "40%",
@@ -42,6 +43,7 @@
         {
             "client": "FinTech Startup",
             "title": "Zero-Error Financial Reconciliation",
+            "image": "/asset/case-study-fintech-startup-dark.svg",
             "metrics": [
                 {
                     "value": "0.00%",
@@ -73,6 +75,7 @@
         {
             "client": "HealthData Inc.",
             "title": "Secure Healthcare Data Infrastructure",
+            "image": "/asset/case-study-healthdata-inc-dark.svg",
             "metrics": [
                 {
                     "value": "SOC2",

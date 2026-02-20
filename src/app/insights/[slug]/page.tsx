@@ -1,4 +1,3 @@
-
 import { notFound } from "next/navigation";
 import Section from "@/components/layout/Section";
 import insightsContent from "@/content/insights.json";
@@ -6,14 +5,22 @@ import Button from "@/components/ui/Button";
 import FadeIn from "@/components/animations/FadeIn";
 import { generatePageMetadata } from "@/lib/metadata";
 import { Metadata } from "next";
+import siteContent from "@/content/site.json";
+import { generateArticleSchema } from "@/lib/jsonLd";
 
 // Helper to find insight by slug
 function getInsightBySlug(slug: string) {
     return insightsContent.posts.find((item: any) => item.slug === slug);
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-    const { slug } = await params;
+export async function generateStaticParams() {
+    return insightsContent.posts.map((post: any) => ({
+        slug: post.slug,
+    }));
+}
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+    const { slug } = params;
     const post = getInsightBySlug(slug);
     if (!post) return {};
 
@@ -24,16 +31,27 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     });
 }
 
-export default async function InsightDetailPage({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params;
+export default async function InsightDetailPage({ params }: { params: { slug: string } }) {
+    const { slug } = params;
     const post: any = getInsightBySlug(slug);
 
     if (!post || !post.content) {
         notFound();
     }
 
+    const jsonLd = generateArticleSchema(
+        post.title,
+        post.excerpt,
+        post.date,
+        `${siteContent.site.url.replace(/\/+$/, "")}/insights/${slug}`
+    );
+
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             {/* Header */}
             <Section variant="muted" className="pt-32 pb-16">
                 <FadeIn>
