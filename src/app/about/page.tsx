@@ -8,6 +8,7 @@ import ParticleBackground from "@/components/animations/ParticleBackground";
 import ParallaxSection from "@/components/animations/ParallaxSection";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 import StaggerContainer from "@/components/animations/StaggerContainer";
+import { generateOrganizationSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = generatePageMetadata({
     title: "About",
@@ -17,9 +18,14 @@ export const metadata: Metadata = generatePageMetadata({
 
 export default function AboutPage() {
     const { page, story, mission, methodology, values } = aboutContent;
+    const jsonLd = generateOrganizationSchema();
 
     return (
         <div className="bg-black min-h-screen text-white overflow-hidden">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             {/* Header Section */}
             <Section className="pt-32 pb-20 relative overflow-hidden">
                 <ParticleBackground />

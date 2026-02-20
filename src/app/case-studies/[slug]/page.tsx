@@ -1,4 +1,3 @@
-
 import { notFound } from "next/navigation";
 import Section from "@/components/layout/Section";
 import caseStudiesContent from "@/content/case-studies.json";
@@ -7,6 +6,8 @@ import FadeIn from "@/components/animations/FadeIn";
 import StaggerContainer from "@/components/animations/StaggerContainer";
 import { generatePageMetadata } from "@/lib/metadata";
 import { Metadata } from "next";
+import siteContent from "@/content/site.json";
+import { generateArticleSchema } from "@/lib/jsonLd";
 
 // Helper to find case study by slug
 function getCaseStudyBySlug(slug: string) {
@@ -20,8 +21,8 @@ export async function generateStaticParams() {
     }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-    const { slug } = await params;
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+    const { slug } = params;
     const study = getCaseStudyBySlug(slug);
     if (!study) return {};
 
@@ -32,8 +33,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     });
 }
 
-export default async function CaseStudyDetailPage({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params;
+export default async function CaseStudyDetailPage({ params }: { params: { slug: string } }) {
+    const { slug } = params;
     const study: any = getCaseStudyBySlug(slug);
 
     if (!study || !study.content) {
@@ -41,9 +42,19 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
     }
 
     const { content } = study;
+    const jsonLd = generateArticleSchema(
+        study.title,
+        study.summary,
+        new Date().toISOString(),
+        `${siteContent.site.url.replace(/\/+$/, "")}/case-studies/${slug}`
+    );
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             {/* Hero */}
             <Section variant="dark" className="pt-32 pb-20">
                 <FadeIn>
