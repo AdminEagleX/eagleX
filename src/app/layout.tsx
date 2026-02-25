@@ -43,7 +43,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${pixelifySans.variable} antialiased flex flex-col min-h-screen`}>
-
         <ContentProtection />
 
         <Navbar />

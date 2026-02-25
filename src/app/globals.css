@@ -21,7 +21,6 @@ body {
     linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-size: 50px 50px;
 }
-
 body {
   -webkit-user-select: none;
   user-select: none;
@@ -35,7 +34,6 @@ textarea,
   -webkit-user-select: text;
   user-select: text;
 }
-
 .font-logo {
   font-family: var(--font-pixelify), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: auto;
