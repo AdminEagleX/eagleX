@@ -22,6 +22,20 @@ body {
   background-size: 50px 50px;
 }
 
+body {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input,
+textarea,
+[contenteditable="true"],
+[contenteditable=""],
+[data-allow-copy] {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
 .font-logo {
   font-family: var(--font-pixelify), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: auto;
@@ -44,6 +58,7 @@ body {
 /* Smooth Scroll */
 html {
   scroll-behavior: smooth;
+  scrollbar-color: rgba(217, 70, 239, 0.7) #000;
 }
 
 /* Custom Scrollbar (Webkit browsers) */
@@ -53,7 +68,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-neutral-100);
+  background: #000;
 }
 
 ::-webkit-scrollbar-thumb {
