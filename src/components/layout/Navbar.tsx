@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Button from "@/components/ui/Button";
 import Container from "./Container";
@@ -29,14 +28,9 @@ const Navbar = () => {
                 <div className="h-16 lg:h-20 flex items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center">
-                        <Image
-                            src="/asset/logo.png"
-                            alt="EagleX Logo"
-                            width={120}
-                            height={40}
-                            className="h-8 lg:h-10 w-auto invert hover:brightness-200 transition-all"
-                            priority
-                        />
+                        <span className="font-logo text-2xl lg:text-4xl text-white font-normal leading-none">
+                            eagle<span className="text-accent">X</span>
+                        </span>
                     </Link>
 
                     {/* Desktop Navigation */}

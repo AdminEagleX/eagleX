@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Pixelify_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -10,6 +10,12 @@ import PageTransition from "@/components/layout/PageTransition";
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const pixelifySans = Pixelify_Sans({
+  variable: "--font-pixelify",
   subsets: ["latin"],
   display: "swap",
 });
@@ -35,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased flex flex-col min-h-screen`}>
+      <body className={`${inter.variable} ${pixelifySans.variable} antialiased flex flex-col min-h-screen`}>
 
         <Navbar />
         <PageTransition>

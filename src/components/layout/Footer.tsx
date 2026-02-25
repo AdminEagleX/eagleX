@@ -13,8 +13,8 @@ const Footer = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 mb-16">
                     {/* Brand */}
                     <div className="col-span-2 md:col-span-1">
-                        <Link href="/" className="text-2xl font-medium text-white tracking-tight mb-4 block">
-                            Eagle<span className="text-accent">X</span>
+                        <Link href="/" className="font-logo text-4xl font-medium text-white tracking-tight mb-4 block">
+                            eagle<span className="text-accent">X</span>
                         </Link>
                         <p className="text-sm leading-relaxed max-w-xs">
                             {siteContent.site.description}
