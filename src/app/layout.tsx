@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import siteContent from "@/content/site.json";
 
 import PageTransition from "@/components/layout/PageTransition";
+import ContentProtection from "@/components/ContentProtection";
 
 
 const inter = Inter({
@@ -42,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${pixelifySans.variable} antialiased flex flex-col min-h-screen`}>
+        <ContentProtection />
 
         <Navbar />
         <PageTransition>
