@@ -9,7 +9,7 @@ import { Metadata } from "next";
 import { generateOrganizationSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Enterprise Consulting & Systems Engineering",
+  title: "Home",
   description: homeContent.hero.subtitle,
   path: "/",
 });

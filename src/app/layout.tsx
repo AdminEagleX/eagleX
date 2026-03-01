@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   description: siteContent.site.description,
   metadataBase: new URL(siteContent.site.url),
   icons: {
-    icon: '/asset/fav.png',
-    shortcut: '/asset/fav.png',
-    apple: '/asset/fav.png',
+    icon: "/asset/favicon.svg",
+    shortcut: "/asset/favicon.svg",
+    apple: "/asset/apple-touch-icon.png",
   },
 };
 
