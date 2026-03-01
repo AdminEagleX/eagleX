@@ -1,9 +1,11 @@
+"use client";
+
 import React from "react";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import RotatingText from "@/components/animations/RotatingText";
-import * as motion from "framer-motion/client";
+import { motion } from "framer-motion";
 
 interface HeroProps {
     title: string;

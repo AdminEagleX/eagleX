@@ -1,6 +1,8 @@
+"use client";
+
 import React from "react";
 import Button from "@/components/ui/Button";
-import * as motion from "framer-motion/client";
+import { motion } from "framer-motion";
 
 interface CtaBannerProps {
     title: string;
@@ -38,7 +40,7 @@ const CtaBanner: React.FC<CtaBannerProps> = ({ title, description, cta }) => {
                     />
                 </div>
 
-                <div className="absolute inset-0 bg-[url('/asset/noise.png')] opacity-10 mix-blend-overlay"></div>
+                <div className="absolute inset-0 opacity-10 mix-blend-overlay bg-[repeating-linear-gradient(45deg,rgba(255,255,255,0.06)_0,rgba(255,255,255,0.06)_1px,transparent_1px,transparent_3px)]"></div>
 
                 {/* Content */}
                 <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 py-24 md:py-32 text-center">
