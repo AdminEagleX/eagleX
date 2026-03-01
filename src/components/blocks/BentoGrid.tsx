@@ -1,6 +1,8 @@
+"use client";
+
 import React from "react";
 import { cn } from "@/lib/utils";
-import * as motion from "framer-motion/client";
+import { motion } from "framer-motion";
 import { Shield, Zap, Layout, CheckCircle } from "lucide-react";
 
 interface BentoGridProps {

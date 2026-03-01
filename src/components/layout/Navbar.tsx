@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Button from "@/components/ui/Button";
@@ -28,9 +29,14 @@ const Navbar = () => {
                 <div className="h-16 lg:h-20 flex items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center">
-                        <span className="font-logo text-2xl lg:text-4xl text-white font-normal leading-none">
-                            eagle<span className="text-accent">X</span>
-                        </span>
+                        <Image
+                            src="/asset/logowhite.png"
+                            alt="eaglex"
+                            width={320}
+                            height={80}
+                            priority
+                            className="h-11 lg:h-16 w-auto"
+                        />
                     </Link>
 
                     {/* Desktop Navigation */}

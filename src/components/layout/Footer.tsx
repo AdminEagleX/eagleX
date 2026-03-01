@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import Container from "./Container";
 import navigation from "@/content/navigation.json";
@@ -13,8 +14,14 @@ const Footer = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 mb-16">
                     {/* Brand */}
                     <div className="col-span-2 md:col-span-1">
-                        <Link href="/" className="font-logo text-4xl font-medium text-white tracking-tight mb-4 block">
-                            eagle<span className="text-accent">X</span>
+                        <Link href="/" className="mb-4 block">
+                            <Image
+                                src="/asset/logowhite.png"
+                                alt="eaglex"
+                                width={320}
+                                height={80}
+                                className="h-10 w-auto"
+                            />
                         </Link>
                         <p className="text-sm leading-relaxed max-w-xs">
                             {siteContent.site.description}

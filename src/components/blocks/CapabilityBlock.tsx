@@ -88,7 +88,7 @@ const CapabilityBlock: React.FC<CapabilityBlockProps> = ({
                         </div>
 
                         {/* Noise Texture */}
-                        <div className="absolute inset-0 bg-[url('/asset/noise.png')] opacity-10 mix-blend-overlay z-10 pointer-events-none"></div>
+                        <div className="absolute inset-0 opacity-10 mix-blend-overlay z-10 pointer-events-none bg-[repeating-linear-gradient(45deg,rgba(255,255,255,0.06)_0,rgba(255,255,255,0.06)_1px,transparent_1px,transparent_3px)]"></div>
 
                         {/* Index Number */}
                         <div className="text-9xl font-bold bg-gradient-to-br from-white/10 to-white/5 bg-clip-text text-transparent group-hover:from-purple-400/30 group-hover:to-pink-400/30 transition-all duration-700 z-20">
